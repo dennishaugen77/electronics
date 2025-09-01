@@ -7,11 +7,11 @@ export const MainRouting = () => {
     return (
         <FullLayout>
             <Routes>
+                <Route path={ROUTES.MAIN.INDEX} element={<Home/>}></Route>
                 <Route
-                    index
+                    path="*"
                     element={<Navigate to={ROUTES.MAIN.INDEX} replace />}
                 />
-                <Route path={ROUTES.MAIN.INDEX} element={<Home/>}></Route>
             </Routes>
         </FullLayout>
     )

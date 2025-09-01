@@ -9,7 +9,7 @@ interface FullLayoutProps {
 
 export const FullLayout: FC<FullLayoutProps> = ({children}) => {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col h-full">
             <Header/>
             <TabMenu/>
             {children}
