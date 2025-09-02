@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import { popularProducts, Product } from '../dummy';
-import { ProductCard } from '@/components/Parts/ProductCard';
+import { ProductShowCard } from '@/components/Parts/ProductShowCard';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -22,7 +22,7 @@ export const PopularProducts = () => {
                         {
                             popularProducts.map((product, index) => {
                                 return (
-                                    <SwiperSlide><ProductCard product={product} key={index}/></SwiperSlide>            
+                                    <SwiperSlide><ProductShowCard product={product} key={index}/></SwiperSlide>            
                                 )
                             })
                         }

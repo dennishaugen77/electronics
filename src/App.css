@@ -9,3 +9,11 @@
 .input-shadow {
    box-shadow: 0 2px 6px 0px rgba(238,238,238,0.61)
 }
+
+.card-shadow {
+  box-shadow: 0 2px 5px 2px #eee!important;
+}
+
+.card-bottom-shadow {
+  box-shadow: 0 7px 7px 2px #eee!important;
+}

@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import { ROUTES } from '../../constants/routes';
 import { Home } from './Home';
 import { FullLayout } from '../../components/FullLayout';
+import { Categories } from './Categories';
 
 export const MainRouting = () => {
     return (
@@ -12,6 +13,7 @@ export const MainRouting = () => {
                     path="*"
                     element={<Navigate to={ROUTES.MAIN.INDEX} replace />}
                 />
+                <Route path={ROUTES.MAIN.PRODUCT_CATEGORY.INDEX} element={<Categories/>}></Route>
             </Routes>
         </FullLayout>
     )

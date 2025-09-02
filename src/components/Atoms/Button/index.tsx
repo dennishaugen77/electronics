@@ -19,9 +19,10 @@ export const Button:FC<ButtonProps> = ({
     return (
         <button
             className={clsx(
-                `relative rounded-2 px-6 h-9 flex items-center text-sm border !outline-none ${className}`,
+                `relative rounded-sm px-6 h-9 flex items-center text-sm border !outline-none ${className}`,
                 {
                 'font-bold bg-primary hover:bg-hov text-white': variant === 'solid' && !(disabled || loading),
+                'font-bold !border-primary border-1 text-primary': variant === 'outline' && !(disabled || loading),
                 'bg-gray-300 text-gray-50 pointer-events-none': disabled || loading,
                 },
             )}

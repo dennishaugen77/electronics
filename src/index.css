@@ -43,6 +43,13 @@ p {
   text-align: start;
 }
 
+h1 {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 500;
+  text-align: start;
+}
+
 h2 {
   font-size: 20px;
   line-height: 32px;
@@ -58,11 +65,6 @@ body {
   min-height: 100vh;
   color: #1c1d1e;
   letter-spacing: 0.5px;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {

@@ -1,13 +1,17 @@
-import React, { MouseEvent } from 'react';
+import React, { MouseEvent } from 'react'
 
-import { ReactComponent as CheckSvg } from './svg/check.svg';
-import { ReactComponent as HeartSvg } from './svg/heart.svg';
-import { ReactComponent as ShoppingSvg } from './svg/shopping.svg';
+import CheckSvg from './svg/check.svg?react'
+import ChevronDown from './svg/chevron-down.svg?react'
+import StarFull from './svg/star-full.svg?react'
+import Star from './svg/star.svg?react'
+import Heart1 from './svg/heart.svg?react'
 
 const iconsMap: Record<string, React.FC> = {
   'check': CheckSvg,
-  'heart': HeartSvg,
-  'shopping': ShoppingSvg 
+  'chevron-down': ChevronDown,
+  'star-full': StarFull,
+  'star': Star,
+  'heart1': Heart1,
 }
 
 interface SvgIconProps {
