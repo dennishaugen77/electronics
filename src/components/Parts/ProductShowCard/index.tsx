@@ -1,6 +1,7 @@
 import { FC } from "react"
 import { Product } from "@/pages/Main/Home/dummy"
 import { Button } from "@/components/Atoms/Button"
+import { SvgIcon } from "@/components/Atoms/SvgIcon"
 
 export const ProductShowCard: FC<{product: Product}> = ({product}) => {
     return (
@@ -12,14 +13,14 @@ export const ProductShowCard: FC<{product: Product}> = ({product}) => {
                 {
                     Array.from({ length: product.rate}).map((_, idx) => {
                         return (
-                            <img src='/svgs/star-full.svg' width={15} key={idx}></img>
+                            <SvgIcon name="star-full" key={idx} width={20} height={20} className="text-primary"></SvgIcon>
                         )
                     })
                 }
                 {
                     Array.from({ length: 5 - product.rate }).map((_, index) => {
                         return (
-                            <img src='/svgs/star.svg' width={15} key={index}></img>
+                            <SvgIcon name="star" key={index} width={20} height={20} className="text-primary"></SvgIcon>
                         )
                     })
                 }

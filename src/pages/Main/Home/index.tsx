@@ -8,6 +8,7 @@ import { PopularCategories } from './PopularCategories';
 import { NewArrivals } from './NewArrivals';
 import { SaleIsLive } from './SaleIsLive';
 import { More } from './More';
+import { SvgIcon } from '@/components/Atoms/SvgIcon';
 
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -41,15 +42,14 @@ export const Home = () => {
                     <Swiper
                         spaceBetween={30}
                         loop={true}
-                        effect={'flip'}
-                        modules={[EffectFlip, Navigation, Pagination ]}
+                        modules={[Navigation, Pagination ]}
                         navigation={true}
                     >
                         <SwiperSlide>
                             <div className="bg-no-repeat bg-cover bg-center h-135 p-12.5" style={{ backgroundImage: 'url(/images/slide-main-1.jpg)' }}>
                                 <div className="flex flex-col w-[42%]">
                                     <p className='font-medium'>Innovate. Upgrade. Repeat</p>
-                                    <p className='font-semibold text-size3 mt-3 leading-11'>Smart Tech for a Smater You</p>
+                                    <p className='font-semibold text-size-3 mt-3 leading-11'>Smart Tech for a Smater You</p>
                                     <Link value='Shop Now' className='!px-3 !py-2.5 !text-base w-28 mt-5'/>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@ export const Home = () => {
                         <div className="bg-no-repeat bg-cover bg-center h-135 p-12.5" style={{ backgroundImage: 'url(/images/slide23-1.jpg)' }}>
                                 <div className="flex flex-col w-[42%]">
                                     <p className='font-medium'>Power Up Your Lifestyle</p>
-                                    <p className='font-semibold text-size3 mt-3 leading-11'>Smart Solutions for Mordern Living</p>
+                                    <p className='font-semibold text-size-3 mt-3 leading-11'>Smart Solutions for Mordern Living</p>
                                     <Link value='Shop Now' className='!px-3 !py-2.5 !text-base w-28 mt-5'/>
                                 </div>
                             </div>
@@ -179,14 +179,14 @@ const SlideProduct: FC<{el: Product}> = ({el}) => {
                         {
                             Array.from({ length: el.rate}).map((_, idx) => {    
                                 return (
-                                    <img src='/svgs/star-full.svg' width={15} key={idx}></img>
+                                    <SvgIcon name="star-full" key={idx} width={15} height={15}></SvgIcon>
                                 )
                             })
                         }
                         {
                             Array.from({ length: 5 - el.rate }).map((_, index) => {
                                 return (
-                                    <img src='/svgs/star.svg' width={15} key={index}></img>
+                                    <SvgIcon name="star" key={index} width={15} height={15}></SvgIcon>
                                 )
                             })
                         }

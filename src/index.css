@@ -14,7 +14,8 @@
 
   --text-mxl: 26px;
   --text-cbase: 15px;
-  --text-size3: 33px;
+  --text-size-3: 33px;
+  --text-size-2: 22px;
 }
 
 :root {

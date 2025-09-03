@@ -17,15 +17,15 @@ export const Header = () => {
                                 className="outline-0 border-1 border-gray-200 px-[0.8rem] py-[0.3rem] min-h-15 w-full input-shadow  rounded-sm"
                             ></input>
                             <Button variant="solid" className="!h-full ">
-                                <img src={'/svgs/search.svg'} width={23}></img>
+                                <SvgIcon name="search" width={23} height={23}></SvgIcon>
                             </Button>
                         </div>
                     </div>
                     
-                    <div className="flex gap-5">
-                        <img src="/svgs/heart.svg" width={30}></img>
-                        <img src="/svgs/user.svg" width={34}></img>
-                        <img src="/svgs/shopping.svg" width={35}></img>
+                    <div className="flex gap-5 items-center">
+                        <SvgIcon name="heart1" width={30} height={30} className="cursor-pointer hover:text-primary transition-colors duration-200 ease-in-out"></SvgIcon>
+                        <SvgIcon name="user" width={34} height={34} className="cursor-pointer hover:text-primary transition-colors duration-200 ease-in-out"></SvgIcon>
+                        <SvgIcon name="shopping" width={35} height={35} className="cursor-pointer hover:text-primary transition-colors duration-200 ease-in-out"></SvgIcon>
                     </div>
                 </div>
             </div>
